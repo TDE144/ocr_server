@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  latex_ast:
+    build:
+      context: ./services/latex_ast
+    ports:
+      - "7000:7000"
+
+  
+  get_latex:
+    build:
+      context: ./services/get_latex
+    ports:
+      - "8000:8000"
