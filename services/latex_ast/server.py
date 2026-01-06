@@ -283,7 +283,7 @@ async def latex_to_ast_with_steps(latex: str):
         return {
             "mode": "syntactic",
             "ast": latex_to_token_ast(latex),
-            "steps": [latex],  # Единственный "шаг" - исходное выражение
+            "steps": [],
             "original": latex,
             "final_result": latex,
             "error": str(e)
